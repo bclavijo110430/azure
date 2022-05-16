@@ -95,7 +95,7 @@ while(-not $order.CertificateUrl) {
 }
 
 # As soon as the url shows up we can create the PFX
-$password = ConvertTo-SecureString -String "112358132142debmedia" -Force -AsPlainText
+$password = ConvertTo-SecureString -String "pass" -Force -AsPlainText
 Export-ACMECertificate $state -Order $order -CertificateKey $certKey -Path "$env:TEMP\$domain.pfx" -Password $password;
 
 # Delete blob to check DNS
