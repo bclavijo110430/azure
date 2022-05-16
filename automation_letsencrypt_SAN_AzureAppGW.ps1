@@ -1,13 +1,12 @@
 Param(
-    
-	[string[]]$Domains,
-	[string]$EmailAddress,
-  [string]$STResourceGroupName,
-  [string]$storageName,
-  [string]$AGResourceGroupName,
-  [string]$AGName,
-	[string]$identifiercert,
-  [string]$AGOldCertName
+    [string[]]$Domains,
+    [string]$EmailAddress,
+    [string]$STResourceGroupName,
+    [string]$storageName,
+    [string]$AGResourceGroupName,
+    [string]$AGName,
+    [string]$identifiercert,
+    [string]$AGOldCertName
 )
 $date=(Get-Date).ToString("yyyyMMdd")
 #$date=Get-Date -Format FileDate
